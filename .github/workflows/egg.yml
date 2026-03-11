@@ -19,7 +19,7 @@ jobs:
         npm run build
 
     - name: 部署🚀
-      uses: JamieMason/deploy-to-github-pages-action@v4
+      uses: JamesIves/github-pages-deploy-action@v4
       with:
         branch: github-pages
         folder: dist
