@@ -19,5 +19,7 @@ jobs:
     - name: 构建并推送到 DockerHub
       uses: docker/build-push-action@v5
       with:
+        context: .
+        file: ./Dockerfile
         push: true
         tags: lutonglol/vue-app:latest
